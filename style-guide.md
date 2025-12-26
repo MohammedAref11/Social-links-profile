@@ -11,13 +11,13 @@ The designs were created to the following widths:
 
 ## Colors
 
-- Green: hsl(75, 94%, 57%)
+- Green: hsl(75, 94%, 57%) (hover and subheading color)
 
-- White: hsl(0, 0%, 100%)
+- White: hsl(0, 0%, 100%) (text color)
 
-- Grey 700: hsl(0, 0%, 20%)
-- Grey 800: hsl(0, 0%, 12%)
-- Grey 900: hsl(0, 0%, 8%)
+- Grey 700: hsl(0, 0%, 20%) (buttons background color)
+- Grey 800: hsl(0, 0%, 12%) (card background color)
+- Grey 900: hsl(0, 0%, 8%)  (body background color)
 
 ## Typography
 

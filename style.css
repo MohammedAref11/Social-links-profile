@@ -64,9 +64,103 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
+:root { 
+  --body-background-color: hsl(0, 0%, 8%); 
+  --card-background-color: hsl(0, 0%, 12%); 
+  --hover-color: hsl(75, 94%, 57%); 
+  --text-color: hsl(0, 0%, 100%); 
+  --links-background-color: hsl(0, 0%, 20%); 
+}
+
+@media (min-width:420px) { 
+  .container { 
+    min-width: 380px;
+  }
+}
+
 body { 
   font-family: "Figtree", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-background-color);
+  color: var(--text-color);
+  padding: 20px; 
 }
+
+.container { 
+  background-color: var(--card-background-color);
+  padding: 42px;
+  border-radius: 10px;
+}
+
+.container__profile { 
+  text-align: center;
+}
+
+.profile__image { 
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin: auto; 
+}
+
+.profile__full-name { 
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin-bottom: 2px;
+}
+
+.profile__location { 
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--hover-color);
+}
+
+.profile__position { 
+  margin-top: 24px;
+  font-size: 0.90rem;
+  font-weight: 300;
+}
+
+.container__social-media-links { 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
+  gap: 1rem; 
+  padding: 0;
+}
+
+.links { 
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background-color: var(--links-background-color);
+  border: 2px solid transparent; 
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.links:hover { 
+  background-color: var(--hover-color);
+  color: var(--body-background-color);
+  transform: translateY(-4px);
+}
+
+.links:active { 
+  scale: 0.92;
+}
+
+
+
+
 
 
 
